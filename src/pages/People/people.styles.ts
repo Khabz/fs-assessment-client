@@ -9,14 +9,13 @@ export const Container = styled.div`
   max-width: 100%;
 
   @media (min-width: 1024px) {
-    flex-wrap: nowrap;
   }
 `;
 
 export const Box = styled.div`
   display: flex;
   width: ${px2vw(320, 320)};
-  min-height: ${px2vw(200, 320)};
+  min-height: ${px2vw(200, 720)};
   flex-direction: column;
   padding: ${px2vw(20)};
   margin: ${px2vw(20)};
@@ -30,29 +29,19 @@ export const Box = styled.div`
   }
 
   @media (min-width: 1024px) {
-    width: ${px2vw(500)};
-    min-height: ${px2vw(300)};
+    width: ${px2vw(200)};
+    min-height: ${px2vw(200)};
     height: 100%;
   }
 `;
 
-export const BoxTitle = styled.h3`
+export const BoxTitle = styled.h6`
   color: #333;
-  font-size: 2rem;
+  font-size: 1.5rem;
   text-align: center;
 
   @media (min-width: 1024px) {
-    font-size: 1.5rem;
-  }
-`;
-
-
-export const Price = styled.h5`
-  color: #333;
-  span {
-    color: blue;
-    font-weight: 600;
-    font-size: 1.5rem
+    font-size: 1rem;
   }
 `;
 
@@ -74,29 +63,3 @@ export const QuantityContainer = styled.div`
   padding: 0;
 `;
 
-export const Input = styled.input`
-  font-size: 18px;
-  padding: 10px;
-  border: none;
-  background: #333;
-  color: #fff;
-  text-align: center;
-`;
-
-export const Button = styled.button`
-  background: #333;
-  color: #fff;
-  font-size: 18px;
-  border: none;
-  padding: 10px;
-  cursor: pointer
-`;
-
-export const Image = styled.img`
-  display: flex;
-  margin: auto;
-  align-item: center;
-  align-content: center;
-  height: 40px;
-  width: 40px
-`
