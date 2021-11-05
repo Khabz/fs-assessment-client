@@ -7,6 +7,7 @@ import HomePage from './pages/People/people.page';
 import NavigationBar from './components/NavBar/navigationBar.component';
 import Categories from './pages/Categories/categories.page';
 import Category from './pages/category/category.page';
+import Search from './pages/Search/search.page';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route exact path="/" component={HomePage} />
           <Route path="/categories" component={Categories} />
           <Route path="/category/:name" component={Category} />
+          <Route path="/search" component={Search} />
         </Switch>
       </Router>
     </Provider>

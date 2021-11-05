@@ -2,9 +2,7 @@ import React from "react";
 import {
   Nav,
   NavLink,
-  NavMenu,
-  NavBtn,
-  NavBtnLink,
+  NavMenu
 } from "./navigationBar.styles";
 
 export default function NavigationBar() {
@@ -14,6 +12,7 @@ export default function NavigationBar() {
         <NavMenu>
           <NavLink to="/">People</NavLink>
           <NavLink to="/categories">Chuck Categories</NavLink>
+          <NavLink to="/search">Search</NavLink>
         </NavMenu>
       </Nav>
     </>
