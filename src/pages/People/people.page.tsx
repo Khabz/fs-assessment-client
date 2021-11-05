@@ -58,8 +58,9 @@ export default function HomePage() {
     }
   }
 
-  React.useMemo(() => fetchPeople(page), [])
-
+  React.useEffect(() => {
+    fetchPeople(page)
+  })
   return (
     <>
     <Container>
