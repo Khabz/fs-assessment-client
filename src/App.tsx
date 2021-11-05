@@ -6,6 +6,7 @@ import Global from './styles/global';
 import HomePage from './pages/People/people.page';
 import NavigationBar from './components/NavBar/navigationBar.component';
 import Categories from './pages/Categories/categories.page';
+import Category from './pages/category/category.page';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Switch>
           <Route exact path="/" component={HomePage} />
           <Route path="/categories" component={Categories} />
+          <Route path="/category/:name" component={Category} />
         </Switch>
       </Router>
     </Provider>
